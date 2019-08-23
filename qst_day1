@@ -1,0 +1,13 @@
+CREATE TABLE t_provider
+(
+p_id INT COMMENT "主键" PRIMARY KEY NOT NULL AUTO_INCREMENT,
+p_no CHAR(10) COMMENT "店铺编号" NOT NULL UNIQUE,
+p_name VARCHAR(10) COMMENT "店铺名称" NOT NULL,
+p_owner VARCHAR(10) COMMENT "店主" NOT NULL,
+p_mobile CHAR(11) COMMENT "联系电话" UNIQUE NOT NULL,
+p_address VARCHAR(50) COMMENT "商户地址" NOT NULL,
+p_level CHAR(2) COMMENT "等级",
+p_credit CHAR(3) COMMENT "信誉度",
+p_type VARCHAR(10) COMMENT "经营类型",
+p_opdate date COMMENT "开店日期"
+)
